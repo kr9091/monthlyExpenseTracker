@@ -1,0 +1,248 @@
+input,
+input::before,
+input::after {
+  box-sizing: border-box;
+}
+.container {
+  width: 1000px;
+  height: 100vh;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  background-color: #5a6b7e;
+  border-radius: 16px;
+}
+
+nav svg {
+  width: 200px;
+  height: 100%;
+}
+
+nav ul {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: ease-in 0.05s;
+}
+nav ul li a:hover {
+  color: #98b5d6;
+  border-bottom: 3px solid #98b5d6;
+}
+.sub-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 20px;
+  background-color: #5a6b7e;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 16px;
+}
+.options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+}
+.options button {
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  transition: ease-in 0.05s;
+}
+.options button:hover {
+  color: #98b5d6;
+}
+.search {
+  color: white;
+}
+.search input {
+  background: transparent;
+  border: solid 2px white;
+  font-family: inherit;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+}
+.search input:focus {
+  outline: none;
+}
+.content-container {
+  width: 100%;
+  height: fit-content;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #ececec;
+  font-family: Roboto, sans-serif;
+}
+table {
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+  border-spacing: 0 0.5em;
+  color: #727272;
+}
+thead td {
+  padding: 0.6rem 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+tbody tr {
+  filter: drop-shadow(1px 1px 2px #666666);
+}
+tbody tr:first-child,
+tbody td:first-child {
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+tbody tr:last-child,
+tbody td:last-child {
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+tbody td {
+  background-color: #ffffff;
+  padding: 0.9rem 0.5rem;
+  text-align: center;
+}
+tbody i {
+  color: #a15d5d;
+}
+tbody i:hover {
+  color: #619c31;
+  cursor: pointer;
+}
+tbody button {
+  background: transparent;
+  border: none;
+}
+
+.total {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 3em;
+  margin: auto;
+  background-color: #babbbc;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 3em;
+  color: #5a6b7e;
+}
+#add-expense {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0px;
+}
+#add-expense input,
+select {
+  background: transparent;
+  border: solid 2px #5a6b7e;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #5a6b7e;
+}
+#add-expense input:focus {
+  outline: none;
+}
+#add-expense button {
+  background: transparent;
+  border: solid 2px #5a6b7e;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #5a6b7e;
+}
+#add-expense button:hover {
+  background-color: #a15d5d;
+  border: solid 2px white;
+  color: white;
+  cursor: pointer;
+}
+#edit-form input,
+select {
+  background: transparent;
+  border: solid 2px #5a6b7e;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #5a6b7e;
+}
+#edit-form input:focus {
+  outline: none;
+}
+#edit-form button {
+  background: transparent;
+  border: solid 2px #5a6b7e;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #5a6b7e;
+}
+#edit-form button:hover {
+  background-color: #a15d5d;
+  border: solid 2px white;
+  color: white;
+  cursor: pointer;
+}
+#delete-form input,
+select {
+  background: transparent;
+  border: solid 2px #5a6b7e;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #5a6b7e;
+}
+#delete-form input:focus {
+  outline: none;
+}
+#delete-form button {
+  background: red;
+  border: solid 2px #5a6b7e;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+}
+#delete-form button:hover {
+  background-color: #814444;
+  border: solid 2px white;
+  color: white;
+  cursor: pointer;
+}
